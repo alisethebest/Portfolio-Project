@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Recipe Book</h1>
+    <div class="categories">
+        <div class="categoryTitle" id="breakfast">Breakfast</div>
+        <div class="recipesList" id="breakfastRecipes"></div>
+        <div class="categoryTitle" id="lunch">Lunch</div>
+        <div class="recipesList" id="lunchRecipes"></div>
+        <div class="categoryTitle" id="dinner">Dinner</div>
+        <div class="recipesList" id="dinnerRecipes"></div>
+    </div>
+
+    <div class="add-recipe-form">
+        <h2>Add New Recipe</h2>
+        <form id="addRecipeForm">
+            <div class="input-group">
+                <label for="newTitle">Title:</label>
+                <input type="text" id="newTitle" placeholder="Title of the recipe">
+            </div>
+    
+            <div class="input-group">
+                <label for="newAuthor">Author:</label>
+                <input type="text" id="newAuthor" placeholder="Author's name">
+            </div>
+    
+            <div class="input-group">
+                <label for="newContent">Ingredients:</label>
+                <textarea id="newContent" placeholder="Ingredients (comma separated)"></textarea>
+            </div>
+    
+            <div class="input-group">
+                <label for="newInstructions">Instructions:</label>
+                <textarea id="newInstructions" placeholder="Instructions"></textarea>
+            </div>
+    
+            <div class="input-group">
+                <label for="newCategory">Category:</label>
+                <select id="newCategory">
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                </select>
+            </div>
+    
+            <div class="input-group">
+                <button type="submit">Add Recipe</button>
+            </div>
+    
+            <p id="errorMsg" style="color:red;"></p>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
